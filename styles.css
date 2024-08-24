@@ -1,5 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     background-color: azure;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    margin: auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 #header {
@@ -10,16 +22,29 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    background-color: azure;
+
 }
 
-#nav-bar li{
+#header-img {
+    margin-right: 500px;
+}
+
+#nav-bar li {
     display: inline-block;
     margin-right: 20px;
-    align-items: end;
+    justify-content: space-evenly;
+}
+
+#nav-bar ul {
+    justify-content: space-around;
 }
 
 a {
     text-decoration: none;
+    color: black;
+    text-align: left;
+    align-items: end;
 }
 
 #nav-bar {
@@ -29,19 +54,98 @@ a {
 #form {
     display: grid;
     justify-items: center;
+    margin-top: 90px !important;
+    margin: auto;
 }
 
 #email {
     width: 275px;
-    height: 30px;
+    height: 25px;
     border-radius: 0;
-    border: 0.25px;
+    border: 1px solid black;
+    border-color: black;
 }
 
 #submit {
     background-color: blue;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
     border-radius: 0;
     border: 0;
     height: 30px;
     width: 150px;
+    margin-top: 15px;
+}
+
+h2 {
+    margin-bottom: 0;
+}
+
+#feature {
+    margin-top: 30px;
+}
+
+.grid {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+}
+
+i {
+    margin-right: 30px;
+    color: blue;
+}
+
+#video {
+    display: inline;
+    align-items: center;
+    max-width: 560px;
+    width: 100%;
+    margin: 50px;
+}
+
+
+
+.price-title {
+    color: black;
+    background-color: rgb(190, 190, 190);
+    text-align: center;
+    justify-items: center;
+    align-items: center;
+    padding: 10px;
+}
+
+#ternor {
+    width: 300px;
+    height: 310px;
+    border: 1px solid black;
+}
+
+ol {
+    text-align: center;
+}
+
+ol li {
+    text-align: center;
+    margin: 20px;
+}
+
+#btn {
+    background-color: blue;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 0;
+    border: 0;
+    height: 30px;
+    width: 150px;
+    margin-top: 15px;
+    margin: auto;
+}
+
+.price {
+    text-align: center;
+    margin: 15px;
+    list-style-type: none;
 }
