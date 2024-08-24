@@ -3,13 +3,45 @@ body {
 }
 
 #header {
+    position: fixed;
+    top: 0;
+    min-height: 75px;
+    padding: 0px 20px;
     display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#nav-bar li{
+    display: inline-block;
+    margin-right: 20px;
+    align-items: end;
+}
+
+a {
+    text-decoration: none;
 }
 
 #nav-bar {
-    display: flex;
+    right: auto;
 }
 
 #form {
     display: grid;
+    justify-items: center;
+}
+
+#email {
+    width: 275px;
+    height: 30px;
+    border-radius: 0;
+    border: 0.25px;
+}
+
+#submit {
+    background-color: blue;
+    border-radius: 0;
+    border: 0;
+    height: 30px;
+    width: 150px;
 }
