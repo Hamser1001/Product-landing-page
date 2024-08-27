@@ -129,6 +129,7 @@ ol {
 ol li {
     text-align: center;
     margin: 20px;
+    
 }
 
 #btn {
@@ -148,4 +149,10 @@ ol li {
     text-align: center;
     margin: 15px;
     list-style-type: none;
+}
+
+li {
+    list-style-type: none;
+    text-align: center;
+    margin: 15px;
 }
