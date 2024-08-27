@@ -1,3 +1,4 @@
+/* Ensure all existing styles are retained */
 * {
     margin: 0;
     padding: 0;
@@ -23,11 +24,14 @@ body {
     justify-content: space-around;
     align-items: center;
     background-color: azure;
-
 }
 
 #header-img {
     margin-right: 500px;
+}
+
+#nav-bar {
+    right: auto;
 }
 
 #nav-bar li {
@@ -45,10 +49,6 @@ a {
     color: black;
     text-align: left;
     align-items: end;
-}
-
-#nav-bar {
-    right: auto;
 }
 
 #form {
@@ -76,14 +76,11 @@ a {
     height: 30px;
     width: 150px;
     margin-top: 15px;
+    padding-right: 10px;
 }
 
 h2 {
     margin-bottom: 0;
-}
-
-#feature {
-    margin-top: 30px;
 }
 
 .grid {
@@ -101,11 +98,15 @@ i {
     display: inline;
     align-items: center;
     max-width: 560px;
-    width: 100%;
+    width: 600px;
+    height: 290px;
     margin: 50px;
 }
 
 
+#title {
+    margin-bottom: 10px;
+}
 
 .price-title {
     color: black;
@@ -114,12 +115,15 @@ i {
     justify-items: center;
     align-items: center;
     padding: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
 }
 
-#ternor {
+#ternor, #bass, #valve {
     width: 300px;
     height: 310px;
     border: 1px solid black;
+    margin: 15px;
 }
 
 ol {
@@ -129,7 +133,6 @@ ol {
 ol li {
     text-align: center;
     margin: 20px;
-    
 }
 
 #btn {
@@ -142,17 +145,66 @@ ol li {
     height: 30px;
     width: 150px;
     margin-top: 15px;
-    margin: auto;
+}
+
+.price, li {
+    text-align: center;
+    margin: 15px;
+    list-style-type: none;
 }
 
 .price {
-    text-align: center;
-    margin: 15px;
-    list-style-type: none;
+    font-size: 26px;
+    margin-bottom: 15px;
+    font-weight: 500;
 }
 
-li {
-    list-style-type: none;
-    text-align: center;
-    margin: 15px;
+.btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+/* Media Query */
+@media (max-width: 768px) {
+    #header-img {
+        margin-right: 0;
+    }
+
+    #nav-bar li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    #form {
+        margin-top: 50px;
+    }
+}
+
+
+#pricing {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 50px;
+}
+
+footer {
+    width: 1000px;
+    height: 100px;
+    padding-bottom: 15px;
+    background-color: rgb(194, 194, 194);
+}
+
+footer ul {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 14px;
+}
+
+footer span {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 14px;
+    color: rgb(168, 165, 165);
 }
