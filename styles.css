@@ -1,210 +1,46 @@
-/* Ensure all existing styles are retained */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
-    background-color: azure;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-items: center;
-    margin: auto;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
 }
 
+/* The menu */
 #header {
-    position: fixed;
-    top: 0;
-    min-height: 75px;
-    padding: 0px 20px;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: azure;
+    padding: 15px 50px;
+    justify-content: space-between;
+    height: 40px;
+    background-color: rgb(245, 245, 245);
+
 }
 
-#header-img {
-    margin-right: 500px;
-}
+#nav-bar ul li {
+    margin: 5px;
+    padding: 0 15px;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
 
-#nav-bar {
-    right: auto;
-}
-
-#nav-bar li {
-    display: inline-block;
-    margin-right: 20px;
-    justify-content: space-evenly;
 }
 
 #nav-bar ul {
-    justify-content: space-around;
-}
-
-a {
-    text-decoration: none;
-    color: black;
-    text-align: left;
-    align-items: end;
-}
-
-#form {
-    display: grid;
-    justify-items: center;
-    margin-top: 90px !important;
-    margin: auto;
-}
-
-#email {
-    width: 275px;
-    height: 25px;
-    border-radius: 0;
-    border: 1px solid black;
-    border-color: black;
-}
-
-#submit {
-    background-color: blue;
-    color: white;
-    font-size: 16px;
-    font-weight: bold;
-    border-radius: 0;
-    border: 0;
-    height: 30px;
-    width: 150px;
-    margin-top: 15px;
-    padding-right: 10px;
-}
-
-h2 {
-    margin-bottom: 0;
-}
-
-.grid {
-    display: flex;
-    flex-direction: row;
-    margin-top: 50px;
-}
-
-i {
-    margin-right: 30px;
-    color: blue;
-}
-
-#video {
-    display: inline;
-    align-items: center;
-    max-width: 560px;
-    width: 600px;
-    height: 290px;
-    margin: 50px;
-}
-
-
-#title {
-    margin-bottom: 10px;
-}
-
-.price-title {
-    color: black;
-    background-color: rgb(190, 190, 190);
-    text-align: center;
-    justify-items: center;
-    align-items: center;
-    padding: 10px;
-    font-weight: 700;
-    text-transform: uppercase;
-}
-
-#ternor, #bass, #valve {
-    width: 300px;
-    height: 310px;
-    border: 1px solid black;
-    margin: 15px;
-}
-
-ol {
-    text-align: center;
-}
-
-ol li {
-    text-align: center;
-    margin: 20px;
-}
-
-#btn {
-    background-color: blue;
-    color: white;
-    font-size: 16px;
-    font-weight: bold;
-    border-radius: 0;
-    border: 0;
-    height: 30px;
-    width: 150px;
-    margin-top: 15px;
-}
-
-.price, li {
-    text-align: center;
-    margin: 15px;
-    list-style-type: none;
-}
-
-.price {
-    font-size: 26px;
-    margin-bottom: 15px;
-    font-weight: 500;
-}
-
-.btn-container {
-    display: flex;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 0;
 }
 
-/* Media Query */
-@media (max-width: 768px) {
-    #header-img {
-        margin-right: 0;
-    }
-
-    #nav-bar li {
-        display: block;
-        margin-bottom: 10px;
-    }
-
-    #form {
-        margin-top: 50px;
-    }
-}
-
-
-#pricing {
+#nav-bar {
+    /* width: 40%; */
     display: flex;
-    flex-direction: row;
-    margin-bottom: 50px;
+    justify-content: end;
+    align-items: center;
 }
 
-footer {
-    width: 1000px;
-    height: 100px;
-    padding-bottom: 15px;
-    background-color: rgb(194, 194, 194);
-}
 
-footer ul {
-    display: flex;
-    justify-content: flex-end;
+/* the Text of nav items*/
+.nav-link {
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    font-family: "Montserrat", sans-serif;
     font-size: 14px;
-}
-
-footer span {
-    display: flex;
-    justify-content: flex-end;
-    font-size: 14px;
-    color: rgb(168, 165, 165);
+    font-weight: 500;
 }
