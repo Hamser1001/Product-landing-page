@@ -53,9 +53,17 @@ body {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    background: red;
     width: 100%;
-    height: 100vh;
+    height: calc(100vh - 70px);
+    background-image:
+        linear-gradient(to top, rgba(0, 0, 0, 1) 0%,
+            rgba(0, 0, 0, 0.5) 50%,
+            rgba(0, 0, 0, 0)),
+        url("assets/Hero-image.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
 }
 
 #title {
@@ -86,4 +94,100 @@ button {
     text-align: center;
     /* optional: margin-top for spacing */
     margin: auto 0;
+}
+
+#footer-container {
+    text-align: center;
+    box-sizing: border-box;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 200px;
+    width: 75%;
+    margin: auto;
+
+}
+
+footer {
+    color: azure;
+    background-color: black;
+}
+
+#footer-container ul {
+    color: antiquewhite;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#footer-container ul li {
+    color: white;
+}
+
+#features {
+    width: 0 auto;
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid black;
+    gap: 10px;
+    max-width: 1000px;
+
+}
+
+.grid {
+    width: 30%;
+    margin: 10px;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: aquamarine;
+}
+
+.definition {
+    margin: 0 auto;
+    width: 80%;
+}
+
+#how-it-works {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 20px auto;
+    padding: 15px;
+    box-sizing: border-box;
+    background-color: aliceblue;
+    border: 1px solid black;
+}
+
+#video {
+    aspect-ratio: 16 / 9;
+    width: auto;
+    max-width: 75%;
+}
+
+#pricing {
+    width: 0 auto;
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid black;
+    gap: 10px;
+    max-width: 1000px;
+}
+
+#ternor,
+#bass,
+#valve {
+    width: 30%;
+    margin: 10px;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: aquamarine;
 }
