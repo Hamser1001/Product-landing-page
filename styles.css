@@ -1,6 +1,28 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     box-sizing: border-box;
+    background-image:
+        linear-gradient(to top, rgba(0, 0, 0, 1),
+            rgba(0, 0, 0, 1));
+}
+
+.section-title,
+#how-it-works h1 {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 60px;
+}
+
+fieldset h2 {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 32px;
 }
 
 /* The menu */
@@ -10,7 +32,10 @@ body {
     justify-content: space-between;
     height: 40px;
     background-color: rgb(245, 245, 245);
+}
 
+section h1 {
+    color: #F2F2F2;
 }
 
 #nav-bar ul li {
@@ -95,7 +120,7 @@ fieldset {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     padding: 10px;
     width: 30%;
     border-radius: 5px;
@@ -112,7 +137,6 @@ fieldset {
 }
 
 button {
-    width: 85%;
     height: 34px;
     margin: 0 auto;
     color: white;
@@ -199,30 +223,35 @@ footer {
     color: white;
 }
 
-#features {
+#features,
+#pricing {
     width: 0 auto;
     margin: 30px auto;
     display: flex;
     justify-content: center;
+    flex-direction: column;
     text-align: center;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     gap: 10px;
     max-width: 1000px;
-
+    height: 70vh;
 }
 
-.grid {
-    width: 30%;
-    margin: 10px;
-    border: 1px solid black;
-    padding: 10px;
-    border-radius: 10px;
-    background-color: aquamarine;
+.grid-parent {
+    display: flex;
+    justify-content: center;
+    /* margin-bottom: 50px; */
 }
+
+
 
 .definition {
     margin: 0 auto;
     width: 80%;
+}
+
+.fa {
+    color: #F25C05;
 }
 
 #how-it-works {
@@ -233,7 +262,7 @@ footer {
     padding: 15px;
     box-sizing: border-box;
     background-color: aliceblue;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 #video {
@@ -248,29 +277,42 @@ footer {
     display: flex;
     justify-content: center;
     text-align: center;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     gap: 10px;
     max-width: 1000px;
 }
 
+.grid,
 #ternor,
 #bass,
 #valve {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 30%;
     margin: 10px;
     border: 1px solid black;
     padding: 10px;
-    border-radius: 10px;
-    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 30%;
+    border-radius: 5px;
+    background-color: #F2F2F2;
+    height: 50vh;
 }
 
-#ternor ul li,
-#bass ul li,
-#valve ul li {
-    text-align: left;
+
+#ternor ul,
+#bass ul,
+#valve ul {
+    text-align: center;
+    text-decoration: none;
+    margin: 10px;
+    list-style-type: none;
+    padding: 10px 0;
+    /* border: 1px solid black; */
+}
+
+#how-it-works h1 {
+    color: black;
 }
 
 #btn-container,
