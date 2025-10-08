@@ -68,7 +68,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     width: 80%;
     height: 100%;
     padding: 20px;
@@ -77,9 +77,8 @@ body {
 }
 
 #title,
-fieldset,
 .text-div {
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 .text-div,
@@ -87,18 +86,66 @@ fieldset {
     width: 50%;
 }
 
-.text-div {
-    height: 300px;
+.text-div,
+fieldset {
+    height: 350px;
 }
 
 fieldset {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    background-color: bisque;
     box-sizing: border-box;
     padding: 10px;
-    height: 300px;
+    width: 30%;
+    border-radius: 5px;
+    background-color: #F2F2F2;
+}
+
+#submit {
+    width: 85%;
+    height: 34px;
+    margin: 0 auto;
+    color: white;
+    border: 0;
+    background-color: #F25C05;
+}
+
+button {
+    width: 85%;
+    height: 34px;
+    margin: 0 auto;
+    color: white;
+    border: 0;
+    background-color: #F25C05;
+}
+
+fieldset p {
+    text-align: center;
+    margin: 10px 15px;
+    font-size: 12px;
+}
+
+label input {
+    width: 80%;
+    height: 20px;
+    margin-bottom: 20px;
+    padding: 5px;
+}
+
+.text-div p {
+    color: white;
+    width: 90%;
+}
+
+fieldset label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+fieldset h2 {
+    text-align: center;
 }
 
 #title {
