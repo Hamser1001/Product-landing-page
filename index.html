@@ -17,7 +17,8 @@
 <body>
     <header id="header">
         <img id="header-img"
-            src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png" alt="logo">
+            src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png" alt="logo"
+            loading="lazy">
 
         <nav id="nav-bar">
             <ul>
@@ -29,13 +30,32 @@
         <button>But Now</button>
 
     </header>
-    <form action="https://www.freecodecamp.com/email-submit" id="form">
-        <h2 id="title">Handcrafted, home-made masterpieces</h2>
-        <label for="email">
-            <input id="email" type="email" name="email" placeholder="Enter your email address">
-        </label>
-        <input id="submit" type="submit" value="Get Started">
-    </form>
+    <section id="form-section">
+        <form action="https://www.freecodecamp.com/email-submit" id="form">
+            <div class="text-div">
+                <h2 id="title">Handcrafted, home-made masterpieces</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore, natus eius corrupti et blanditiis cum exercitationem ratione doloremque nemo quod reiciendis ut! Sit, voluptate odit culpa natus distinctio possimus ducimus?</p>
+            </div>
+
+            <fieldset>
+                <h2>Contact Information</h2>
+                <label>
+                    First Name
+                    <input type="text" name="first-name">
+                </label>
+                <label>
+                    Last Name
+                    <input type="text" name="last-name">
+                </label>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email address">
+                <input id="submit" type="submit" value="Get Started">
+            </fieldset>
+
+
+        </form>
+    </section>
+
     <section id="features">
         <div class="grid">
             <div class="icon">
