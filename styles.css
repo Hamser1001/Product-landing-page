@@ -16,6 +16,7 @@ body {
     font-weight: 400;
     font-style: normal;
     font-size: 60px;
+    margin: 0;
 }
 
 fieldset h2 {
@@ -36,6 +37,12 @@ fieldset h2 {
 
 section h1 {
     color: #F2F2F2;
+}
+
+#features,
+#how-it-works,
+#pricing {
+    margin-top: 50px;
 }
 
 #nav-bar ul li {
@@ -193,48 +200,62 @@ button {
 }
 
 #footer-container {
-    text-align: center;
-    box-sizing: border-box;
-    padding: 20px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: end;
+    align-items: flex-end;
+    text-align: right;
     height: 200px;
-    width: 75%;
-    margin: auto;
+    width: 92%;
 
 }
 
 footer {
-    color: azure;
-    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(232, 253, 253);
+    padding-bottom: 25px;
+    padding-top: 25px;
+    background-image:
+        linear-gradient(to top, rgba(0, 0, 0, 1) 0%,
+            rgba(0, 0, 0, 0.9) 100%,
+            rgba(0, 0, 0, 0)),
+        url("assets/Hero-image.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 #footer-container ul {
     color: antiquewhite;
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    align-items: center;
+    list-style: none;
 }
+
+#footer-container ul li {
+    margin: 10px;
+}
+
 
 .nav-link-footer {
     color: white;
     text-decoration: none;
     list-style-type: none;
     text-align: right;
+
+
 }
 
 #footer-note {
+    margin-top: 50px;
     text-align: right;
 }
 
 #features,
 #pricing {
     width: 0 auto;
-    margin: 30px auto;
+    margin: 50px auto;
+    padding: 30px auto;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -243,12 +264,13 @@ footer {
     gap: 10px;
     max-width: 1000px;
     height: 70vh;
+    box-sizing: border-box;
 }
 
 .grid-parent {
     display: flex;
     justify-content: center;
-    /* margin-bottom: 50px; */
+    margin-bottom: 50px;
 }
 
 
@@ -266,7 +288,7 @@ footer {
     display: flex;
     justify-content: center;
     width: 100%;
-    margin: 20px auto;
+    margin: 20px auto 50px auto;
     padding: 15px;
     box-sizing: border-box;
     background-color: aliceblue;
@@ -277,6 +299,7 @@ footer {
     aspect-ratio: 16 / 9;
     width: auto;
     max-width: 75%;
+    margin-bottom: 50px;
 }
 
 #pricing {
@@ -333,4 +356,14 @@ footer {
     flex-direction: column;
     align-items: center;
     margin: 0 auto;
+}
+
+.price-title {
+    font-size: 30px;
+    margin: 5px;
+}
+
+.price {
+    font-size: 50px;
+    margin: 2px;
 }
