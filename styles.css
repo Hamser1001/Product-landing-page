@@ -91,7 +91,6 @@ section h1 {
     justify-content: center;
     align-items: center;
     width: 100%;
-    max-width: 1000px;
     height: calc(100vh - 70px);
     background-image:
         linear-gradient(to top, rgba(0, 0, 0, 1) 0%,
@@ -112,6 +111,7 @@ section h1 {
     padding: 20px;
     gap: 25px;
     box-sizing: border-box;
+    max-width: 1200px;
 }
 
 .text-div {
@@ -389,8 +389,6 @@ footer {
     margin: 0 auto;
 }
 
-#how-it-works {}
-
 .price-title {
     font-size: 30px;
     margin: 5px;
@@ -404,4 +402,48 @@ footer {
     font-weight: 500;
     font-family: "Bebas Neue", sans-serif;
     color: #F25C05;
+}
+
+
+#submit:hover,
+button:hover {
+    background-color: #0D0D0D;
+    cursor: pointer;
+}
+
+.price:hover {
+    color: #0D0D0D;
+}
+
+@media (max-width: 768px) {
+    #title {
+        font-size: 2rem;
+    }
+
+    .text-div p {
+        font-size: 0.7rem;
+    }
+
+    #form-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    #form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    .text-div {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
 }
