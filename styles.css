@@ -20,6 +20,7 @@ body {
 }
 
 fieldset h2 {
+    text-align: center;
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -100,7 +101,6 @@ section h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* border: 1px solid blue; */
     width: 80%;
     height: 100%;
     padding: 20px;
@@ -108,7 +108,6 @@ section h1 {
     box-sizing: border-box;
 }
 
-#title,
 .text-div {
     /* border: 1px solid red; */
 }
@@ -167,6 +166,8 @@ label input {
 .text-div p {
     color: white;
     width: 90%;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.9rem;
 }
 
 fieldset label {
@@ -175,14 +176,12 @@ fieldset label {
     align-items: center;
 }
 
-fieldset h2 {
-    text-align: center;
-}
 
 #title {
-    color: antiquewhite;
-    font-size: 40px;
-    font-family: "Montserrat", sans-serif;
+    color: #ffffff;
+    font-size: 2.5rem;
+    font-family: "DynaPuff", system-ui;
+    margin: 0;
 }
 
 
@@ -328,6 +327,20 @@ footer {
     border-radius: 5px;
     background-color: #F2F2F2;
     height: 50vh;
+}
+
+.grid h2 {
+    color: #0D0D0D;
+    font-size: 34px;
+    font-weight:100;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.grid p {
+    color: #0D0D0D;
+    font-size: 15px;
+    font-weight:400;
+    font-family: "Montserrat", sans-serif;
 }
 
 
